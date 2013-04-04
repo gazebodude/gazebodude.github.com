@@ -1,6 +1,6 @@
 ---
 layout: post
-title: First post!
+title: Getting there
 ---
 
 Well this site is gradually getting there. Things coming soon:
