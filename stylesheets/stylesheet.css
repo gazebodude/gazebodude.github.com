@@ -342,6 +342,10 @@ footer .owner p a {
   font-style: italic;
 }
 
+em {
+  font-style: italic;
+}
+
 /* Markdown */
 .markdown-body h1,
 .markdown-body h2,
