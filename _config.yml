@@ -1,0 +1,5 @@
+# Github config overrides (c.f. https://help.github.com/articles/using-jekyll-with-pages)
+# These are just here to match their configuration
+safe: true
+lsi: false
+pygments: true

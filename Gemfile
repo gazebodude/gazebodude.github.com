@@ -10,4 +10,5 @@ gem 'RedCloth',   '=4.2.9'
 
 gem 'rake'
 gem 'sass'
+gem 'compass'
 # note that coffee script is managed by the node.js package manager npm
