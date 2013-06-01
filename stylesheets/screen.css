@@ -545,25 +545,25 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 65, _sass/screen.scss */
+/* line 72, _sass/screen.scss */
 nav#sidebar {
   border-top: 1px black solid;
   border-right: 1px black solid;
   border-bottom: 1px black solid;
 }
-/* line 66, _sass/screen.scss */
+/* line 73, _sass/screen.scss */
 nav#sidebar > header {
   padding-left: 40px;
 }
-/* line 68, _sass/screen.scss */
+/* line 75, _sass/screen.scss */
 nav#sidebar > header > h1 {
   font-size: 2em;
 }
-/* line 69, _sass/screen.scss */
+/* line 76, _sass/screen.scss */
 nav#sidebar > header > h2 {
   font-size: 0.75em;
 }
-/* line 71, _sass/screen.scss */
+/* line 78, _sass/screen.scss */
 nav#sidebar > ul {
   list-style: none;
 }
@@ -573,16 +573,16 @@ nav#sidebar > ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 73, _sass/screen.scss */
+/* line 80, _sass/screen.scss */
 nav#sidebar > ul > li {
   font-size: 1.25em;
 }
-/* line 76, _sass/screen.scss */
+/* line 83, _sass/screen.scss */
 nav#sidebar > ul ul {
   margin-bottom: 0;
 }
 
-/* line 85, _sass/screen.scss */
+/* line 92, _sass/screen.scss */
 #footer p {
   display: block;
   width: 209px;

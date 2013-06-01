@@ -62,6 +62,13 @@ body.two-col {
   }
 }
 
+#header {
+  // site banner styles
+  img {
+  
+  }
+}
+
 nav#sidebar {
   &>header {
     @include prepend(1);
