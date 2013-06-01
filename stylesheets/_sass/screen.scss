@@ -14,6 +14,12 @@
 // configuration applied, uncomment:
 // @include blueprint
 
+// Blueprint debugging classes
+@import "blueprint/debug";
+
+// Compass bullet styles
+@import "compass/typography/lists/bullets";
+
 // If you are doing a lot of stylesheet concatenation, it is suggested
 // that you scope your blueprint styles, so that you can better control
 // what pages use blueprint when stylesheets are concatenated together.
@@ -24,6 +30,9 @@ body.bp {
   @include blueprint-interaction;
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
+  
+  // Grid background for debugging
+  @if $site-debug == true { @include showgrid(); }
 }
 
 form.bp {
@@ -36,20 +45,44 @@ form.bp {
 body.two-col {
   #container {
     @include container;
+    float: left;
   }
   #header, #footer {
     @include column($blueprint-grid-columns);
   }
   #sidebar {
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 3);
+    $sidebar-columns: $screen-navbar-width-columns;
     @include column($sidebar-columns);
+    float: left;
   }
   #content {
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(2 * $blueprint-grid-columns / 3);
+    $content-columns: $screen-content-width-columns;
     // true means it's the last column in the row
     @include column($content-columns, true);
   }
+}
+
+nav#sidebar {
+  &>header {
+    @include prepend(1);
+    &>h1 { font-size: 2em; }
+    &>h2 { font-size: 0.75em; }
+  }
+  &>ul {
+    @include no-bullets;
+    >li {
+      font-size: 1.25em;
+    }
+    ul { margin-bottom: 0; }
+  }
+  border-top: 1px black solid;
+  border-right: 1px black solid;
+  border-bottom: 1px black solid;
+}
+
+// Styles for stackexchange flair
+$SE-flair-width: 209px;
+#footer p {
+  display: block;
+  width: $SE-flair-width;
 }
