@@ -10,7 +10,12 @@ $blueprint-grid-margin: 10px;
 $blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
 
 // Debug flag
-$site-debug: true;
+$site-debug: false;
 
 $screen-navbar-width-columns: 6;
 $screen-content-width-columns: $blueprint-grid-columns - $screen-navbar-width-columns - 1;
+
+// Default colors
+$header-color: #ffb65c;
+$text-color: rgb(226, 226, 226);
+$background-color: #669999;

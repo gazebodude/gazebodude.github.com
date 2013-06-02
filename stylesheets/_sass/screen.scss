@@ -33,6 +33,8 @@ body.bp {
   
   // Grid background for debugging
   @if $site-debug == true { @include showgrid(); }
+  background: $background-color repeat;
+  color: $text-color;
 }
 
 form.bp {
@@ -67,6 +69,8 @@ body.two-col {
   img {
   
   }
+  h1 { color: $header-color; }
+  h2 { color: $text-color; }
 }
 
 nav#sidebar {
