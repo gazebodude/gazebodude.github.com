@@ -57,6 +57,12 @@ a img {
   border: none;
 }
 
+@font-face {
+  font-family: "Gothic Ultra";
+  src: url('/stylesheets/fonts/gothic_ultra_ot-webfont.eot');
+  src: url('/stylesheets/fonts/gothic_ultra_ot-webfont.eot?#iefix') format('eot'), url(/fonts/gothic_ultra_ot-webfont.woff) format('woff'), url('/stylesheets/fonts/gothic_ultra_ot-webfont.ttf') format('truetype'), url('/stylesheets/fonts/gothic_ultra_ot-webfont.svg') format('svg');
+}
+
 /* line 26, _sass/screen.scss */
 body.bp {
   line-height: 1.5;
@@ -540,31 +546,36 @@ body.two-col #content {
 /* line 72, _sass/screen.scss */
 #header h1 {
   color: #ffb65c;
+  font-family: "Gothic Ultra";
+  font-size: 8em;
+  margin-bottom: 0;
 }
-/* line 73, _sass/screen.scss */
+/* line 78, _sass/screen.scss */
 #header h2 {
   color: #e2e2e2;
+  text-align: right;
+  font-size: 1.75em;
+  font-style: italic;
 }
 
-/* line 76, _sass/screen.scss */
+/* line 86, _sass/screen.scss */
 nav#sidebar {
   border-top: 1px black solid;
   border-right: 1px black solid;
   border-bottom: 1px black solid;
 }
-/* line 77, _sass/screen.scss */
-nav#sidebar > header {
-  padding-left: 40px;
-}
-/* line 79, _sass/screen.scss */
+/* line 89, _sass/screen.scss */
 nav#sidebar > header > h1 {
   font-size: 2em;
+  margin-top: 0.2em;
+  margin-bottom: 0;
 }
-/* line 80, _sass/screen.scss */
+/* line 90, _sass/screen.scss */
 nav#sidebar > header > h2 {
+  color: #e2e2e2;
   font-size: 0.75em;
 }
-/* line 82, _sass/screen.scss */
+/* line 92, _sass/screen.scss */
 nav#sidebar > ul {
   list-style: none;
 }
@@ -574,16 +585,16 @@ nav#sidebar > ul li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 84, _sass/screen.scss */
+/* line 94, _sass/screen.scss */
 nav#sidebar > ul > li {
   font-size: 1.25em;
 }
-/* line 87, _sass/screen.scss */
+/* line 97, _sass/screen.scss */
 nav#sidebar > ul ul {
   margin-bottom: 0;
 }
 
-/* line 96, _sass/screen.scss */
+/* line 106, _sass/screen.scss */
 #footer p {
   display: block;
   width: 209px;

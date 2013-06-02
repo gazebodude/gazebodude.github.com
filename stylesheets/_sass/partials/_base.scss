@@ -19,3 +19,8 @@ $screen-content-width-columns: $blueprint-grid-columns - $screen-navbar-width-co
 $header-color: #ffb65c;
 $text-color: rgb(226, 226, 226);
 $background-color: #669999;
+
+@import "compass/css3/font-face";
+@include font-face("Gothic Ultra", font-files("/fonts/gothic_ultra_ot-webfont.woff", woff,
+  "gothic_ultra_ot-webfont.ttf", ttf, "gothic_ultra_ot-webfont.svg", svg),
+  "gothic_ultra_ot-webfont.eot");
