@@ -595,7 +595,8 @@ nav#sidebar > ul ul {
 }
 
 /* line 106, _sass/screen.scss */
-#footer p {
+#footer #SE-flair {
   display: block;
   width: 209px;
+  float: left;
 }

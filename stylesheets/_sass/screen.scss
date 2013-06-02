@@ -103,7 +103,8 @@ nav#sidebar {
 
 // Styles for stackexchange flair
 $SE-flair-width: 209px;
-#footer p {
+#footer #SE-flair {
   display: block;
   width: $SE-flair-width;
+  float: left;
 }
