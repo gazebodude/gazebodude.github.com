@@ -100,11 +100,11 @@ body.two-col {
   }
 }
 
-nav#sidebar {
+#sidebar {
   @include prepend(.5);
-  &>header {
+  &>header>hgroup {
     &>h1 { font-size: 2em; margin-top: 0.2em; margin-bottom: 0; }
-    &>h2 { color: $text-color; font-size: 0.5em; }
+    &>h2 { color: $text-color; font-size: 1em; }
   }
   &>ul {
     @include no-bullets;
