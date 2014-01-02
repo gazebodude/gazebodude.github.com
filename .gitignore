@@ -1,6 +1,6 @@
 _site/
 .sass-cache/
 stylesheets/.sass-cache/
-stylesheets/*.css
+#stylesheets/*.css
 *.swp
 .bundle/install.log
