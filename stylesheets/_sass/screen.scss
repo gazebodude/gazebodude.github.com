@@ -30,6 +30,7 @@ body.bp {
   @include blueprint-interaction;
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
+  @include prepend(1);
   
   // Grid background for debugging
   @if $site-debug == true { @include showgrid(); }
@@ -54,13 +55,22 @@ body.two-col {
   }
   #sidebar {
     $sidebar-columns: $screen-navbar-width-columns;
-    @include column($sidebar-columns);
+    // true means it's the last column in the row
+    @include column($sidebar-columns, true);
     float: left;
   }
   #content {
     $content-columns: $screen-content-width-columns;
-    // true means it's the last column in the row
-    @include column($content-columns, true);
+    @include column($content-columns);
+    font-size: 1.5em;
+    //@include prepend(0.25);
+  }
+  blockquote {
+    color: $blockquote-color;
+  }
+
+  a {
+    @include link-colors($link-color,$link-hover-color,$link-active-color,$link-visited-color,$link-focus-color);
   }
 }
 
@@ -84,10 +94,10 @@ body.two-col {
 }
 
 nav#sidebar {
-  //@include prepend(.5);
+  @include prepend(.5);
   &>header {
     &>h1 { font-size: 2em; margin-top: 0.2em; margin-bottom: 0; }
-    &>h2 { color: $text-color; font-size: 0.75em; }
+    &>h2 { color: $text-color; font-size: 0.5em; }
   }
   &>ul {
     @include no-bullets;
@@ -96,9 +106,9 @@ nav#sidebar {
     }
     ul { margin-bottom: 0; }
   }
-  border-top: 1px black solid;
-  border-right: 1px black solid;
-  border-bottom: 1px black solid;
+  //border-top: 1px black solid;
+  border-left: 1px black solid;
+  //border-bottom: 1px black solid;
 }
 
 // Styles for stackexchange flair
@@ -107,4 +117,13 @@ $SE-flair-width: 209px;
   display: block;
   width: $SE-flair-width;
   float: left;
+}
+
+// Generic element styles
+
+// Content specific styles
+#content {
+  img {
+    width: 100%;
+  }
 }

@@ -16,9 +16,17 @@ $screen-navbar-width-columns: 6;
 $screen-content-width-columns: $blueprint-grid-columns - $screen-navbar-width-columns - 1;
 
 // Default colors
-$header-color: #ffb65c;
+$header-color: #ffbf08;
 $text-color: rgb(226, 226, 226);
-$background-color: #669999;
+$background-color: #005757;
+$blockquote-color: #ff9aee;
+
+@import "compass/typography/links/link-colors";
+$link-color: #00ffff;
+$link-hover-color: #acffff;
+$link-visited-color: #a3ff85;
+$link-active-color: #a3ff85;
+$link-focus-color: #a3ff85;
 
 @import "compass/css3/font-face";
 @include font-face("Gothic Ultra", font-files("/fonts/gothic_ultra_ot-webfont.woff", woff,
