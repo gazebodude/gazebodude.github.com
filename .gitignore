@@ -3,3 +3,4 @@ _site/
 stylesheets/.sass-cache/
 stylesheets/*.css
 *.swp
+.bundle/install.log
