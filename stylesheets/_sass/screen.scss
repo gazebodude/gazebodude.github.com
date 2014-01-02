@@ -1,0 +1,141 @@
+// This import applies a global reset to any page that imports this stylesheet.
+@import "blueprint/reset";
+
+// To configure blueprint, edit the partials/base.sass file.
+@import "partials/base";
+
+// Import all the default blueprint modules so that we can access their mixins.
+@import "blueprint";
+
+// Import the non-default scaffolding module.
+@import "blueprint/scaffolding";
+
+// To generate css equivalent to the blueprint css but with your
+// configuration applied, uncomment:
+// @include blueprint
+
+// Blueprint debugging classes
+@import "blueprint/debug";
+
+// Compass bullet styles
+@import "compass/typography/lists/bullets";
+
+// If you are doing a lot of stylesheet concatenation, it is suggested
+// that you scope your blueprint styles, so that you can better control
+// what pages use blueprint when stylesheets are concatenated together.
+body.bp {
+  @include blueprint-typography(true);
+  @include blueprint-utilities;
+  @include blueprint-debug;
+  @include blueprint-interaction;
+  // Remove the scaffolding when you're ready to start doing visual design.
+  // Or leave it in if you're happy with how blueprint looks out-of-the-box
+  @include prepend(1);
+  
+  // Grid background for debugging
+  @if $site-debug == true { @include showgrid(); }
+  background: $background-color repeat;
+  color: $text-color;
+}
+
+form.bp {
+  @include blueprint-form;
+  // You'll probably want to remove the scaffolding once you start styling your site.
+  @include blueprint-scaffolding;
+}
+
+// Page layout can be done using mixins applied to your semantic classes and IDs:
+body.two-col {
+  #container {
+    @include container;
+    float: left;
+  }
+  #header, #footer {
+    @include column($blueprint-grid-columns);
+  }
+  #sidebar {
+    $sidebar-columns: $screen-navbar-width-columns;
+    // true means it's the last column in the row
+    @include column($sidebar-columns, true);
+    float: left;
+  }
+  #content {
+    $content-columns: $screen-content-width-columns;
+    @include column($content-columns);
+    font-size: 1.5em;
+    //@include prepend(0.25);
+  }
+  blockquote {
+    color: $blockquote-color;
+    background: $block-background-color;
+    border-radius: $block-corner-radius;
+    box-shadow: 4px 4px 5px $block-shadow-color inset, -2px -2px 5px $block-shadow-color inset;
+    padding: 1em;
+  }
+
+  a {
+    @include link-colors($link-color,$link-hover-color,$link-active-color,$link-visited-color,$link-focus-color);
+  }
+}
+
+#header {
+  // site banner styles
+  img {
+  
+  }
+  h1 {
+    color: $header-color;
+    font-family: "Gothic Ultra";
+    font-size: 8em;
+    margin-bottom: 0;
+  }
+  h2 { 
+    color: $text-color;
+    text-align: right;
+    font-size: 1.75em;
+    font-style: italic;
+  }
+  .header-link {
+    @include link-colors($header-color,$header-color,$header-color,$header-color,$header-color);
+  }
+}
+
+#sidebar {
+  @include prepend(.5);
+  &>header>hgroup {
+    &>h1 { font-size: 2em; margin-top: 0.2em; margin-bottom: 0; }
+    &>h2 { color: $text-color; font-size: 1em; }
+  }
+  &>ul {
+    @include no-bullets;
+    >li {
+      font-size: 1.25em;
+    }
+    ul { margin-bottom: 0; }
+  }
+  //border-top: 1px black solid;
+  border-left: 1px black solid;
+  //border-bottom: 1px black solid;
+}
+
+// Styles for stackexchange flair
+$SE-flair-width: 209px;
+#footer #SE-flair {
+  display: block;
+  width: $SE-flair-width;
+  float: left;
+}
+
+// Generic element styles
+
+// Content specific styles
+#content {
+  img {
+    width: 100%;
+  }
+}
+
+// Syntax highlighting stylesheet
+// Copied from https://github.com/mojombo/tpw/blob/master/css/syntax.css
+@import "partials/syntax";
+

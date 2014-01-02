@@ -1,0 +1,38 @@
+// Here is where you can define your constants for your application and to configure the blueprint framework.
+// Feel free to delete these if you want keep the defaults:
+
+$blueprint-grid-columns: 24;
+$blueprint-container-size: 950px;
+$blueprint-grid-margin: 10px;
+
+// Use this to calculate the width based on the total width.
+// Or you can set $blueprint-grid-width to a fixed value and unset $blueprint-container-size -- it will be calculated for you.
+$blueprint-grid-width: ($blueprint-container-size + $blueprint-grid-margin) / $blueprint-grid-columns - $blueprint-grid-margin;
+
+// Debug flag
+$site-debug: false;
+
+$screen-navbar-width-columns: 6;
+$screen-content-width-columns: $blueprint-grid-columns - $screen-navbar-width-columns - 1;
+
+// Default colors
+$header-color: #ffbf08;
+$text-color: rgb(226, 226, 226);
+$background-color: #005757;
+$blockquote-color: #66ff66;
+
+$block-background-color: #303030;
+$block-shadow-color: #202020;
+$block-corner-radius: 1em;
+
+@import "compass/typography/links/link-colors";
+$link-color: #00ffff;
+$link-hover-color: #acffff;
+$link-visited-color: #a3ff85;
+$link-active-color: #a3ff85;
+$link-focus-color: #a3ff85;
+
+@import "compass/css3/font-face";
+@include font-face("Gothic Ultra", font-files("/fonts/gothic_ultra_ot-webfont.woff", woff,
+  "gothic_ultra_ot-webfont.ttf", ttf, "gothic_ultra_ot-webfont.svg", svg),
+  "gothic_ultra_ot-webfont.eot");

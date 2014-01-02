@@ -1,19 +1,22 @@
 <!doctype html>
-<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
-<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <link rel="stylesheet" href="/stylesheets/stylesheet.css" media="screen"/>
-  <link rel="stylesheet" href="/stylesheets/pygment_trac.css"/>
+  <link rel="shortcut icon" href="/favicon.png" />
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="/javascripts/script.js"></script>
 
-  <title>(Mis)anthropic selection</title>
+  <title>{{ page.title }}</title>
   <meta name="description" content="Life, the universe and everything (and nothing) from the point of view of a physics grad student">
 
+  <!-- MathJax js includes -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script type="text/javascript"
     src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -21,43 +24,77 @@
 
 </head>
 
-<body>
-
-  <div class="wrapper">
+<body class="bp two-col">
+<div  id="container">
+  <header id="header">
+    <hgroup>
+      <h1><a class="header-link" href="/index.html">(Mis)anthropic selection</a></h1>
+      <h2>Life, the universe and everything (and nothing) from the point of view of a physics grad student</h2>
+      <img src="/images/banner1.png" alt="site banner"/>
+    </hgroup>
+  </header>
+  <section id="content">
+    <article class="markdown-body">
+      {{ content }}
+    </article>
+  </section>
+  <nav id="sidebar">
     <header>
-      <h1 class="title">(Mis)anthropic selection</h1>
+      <hgroup>
+        <h1>Quicklinks</h1>
+        <h2>(order implies no value judgement)</h2>
+      </hgroup>
     </header>
-    <div id="container">
-      <p class="tagline">Life, the universe and everything (and nothing) from the point of view of a physics grad student</p>
-      <div id="main" role="main">
-        <div class="download-bar">
-        <div class="inner">
-          <a href="http://gazebodude.github.com/" class="code">View (Mis)anthropic selection</a>
-        </div>
-        <span class="blc"></span><span class="trc"></span>
-        </div>
-        <article class="markdown-body">
-		{{ content }}
-	</article>
-      </div>
-    </div>
-    <footer>
-      <div class="owner">
-
-      <p><a href="https://github.com/gazebodude" class="avatar"><img src="https://secure.gravatar.com/avatar/0d2836b684174c876c1b91fa787a6c2e?s=30&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png" width="48" height="48"/></a>View <a href="https://github.com/gazebodude">gazebodude</a> on <a href="https://www.github.com">GitHub</a></p>
-
-      </div>
-      <div class="creds">
-        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br/>theme by <a href="http://twitter.com/jonrohan/">Jon Rohan</a></small>
-      </div>
-    </footer>
-  </div>
-  <div class="current-section">
-    <a href="#top">Scroll to top</a>
-    <a href="https://github.com/gazebodude/gazebodude.github.com/tarball/master" class="tar">tar</a><a href="https://github.com/gazebodude/gazebodude.github.com/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
-    <p class="name"></p>
-  </div>
-
-  
+      <ul>
+  <li>About</li>
+  <ul>
+  <li><a href="/about/">Me</a></li>
+  </ul>
+	<li>Physics Blogs &amp; Reference</li>
+	<ul>
+	<li><a href="http://www.preposterousuniverse.com/blog/">Sean Carroll</a></li>
+	<li><a href="http://johncarlosbaez.wordpress.com/">Azimuth</a></li>
+	<li><a href="http://www.slate.com/blogs/bad_astronomy.html">Bad Astronomy</a></li>
+	<li><a href="http://profmattstrassler.com/">Of Particular Significance</a></li>
+	<li><a href="http://www.math.columbia.edu/~woit/wordpress/">Not Even Wrong</a></li>
+	<li><a href="http://resonaances.blogspot.com.au/">Resonaances</a></li>
+	<li><a href="http://physics.stackexchange.com/">Physics Stack Exchange</a></li>
+	<li><a href="http://pdg.lbl.gov/index.html">PDG: Reviews of Particle Physics</a></li>
+	<li><a href="http://arxiv.org/">Arxiv</a></li>
+	<li><a href="http://blog.vixra.org/">Vixra</a></li>
+	</ul>
+	<li>Christianity &amp; Social Conscience</li>
+	<ul>
+	<li><a href="http://www.patheos.com/blogs/slacktivist/">Slacktivist</a></li>
+	<li><a href="http://www.patheos.com/blogs/peterenns/">Peter Enns</a></li>
+	<li><a href="http://experimentaltheology.blogspot.com.au/">Experimental Theology</a></li>
+	<li><a href="http://www.carlmedearis.com/blog/">Carl Medearis</a></li>
+	<li><a href="http://brianmclaren.net/">Brian McLaren</a></li>
+	</ul>
+	<li>Games &amp; Youtubers</li>
+	<ul>
+	<li><a href="https://www.kerbalspaceprogram.com/index.php">Kerbal Space Program</a></li>
+	<li><a href="http://www.youtube.com/user/szyzyg">Scott Manley</a></li>
+	<li><a href="http://www.youtube.com/user/TheWinterOwl">The Winter Owl</a></li>
+	<li><a href="http://www.youtube.com/user/xPDxTV">Play Daily TV</a></li>
+	<li><a href="http://www.youtube.com/user/SideStrafe">SideStrafe</a></li>
+	<li><a href="http://www.youtube.com/user/FRANKIEonPCin1080p">FRANKIEonPCin1080p</a></li>
+	<li><a href="http://www.youtube.com/user/quill18">Quill18</a></li>
+	</ul>
+	<li>Comics</li>
+	<ul>
+	<li><a href="http://xkcd.com/">xkcd</a> (<a href="http://what-if.xkcd.com/">What If?</a>)</li>
+	<li><a href="http://theoatmeal.com/comics">The Oatmeal</a></li>
+	</ul>
+      </ul>
+  </nav>
+  <footer id="footer">
+    <span id="SE-flair"><a href="http://physics.stackexchange.com/users/17320/michael-brown"><img src="http://physics.stackexchange.com/users/flair/17320.png?theme=dark" width="208" height="58" alt="profile for Michael Brown at Physics Stack Exchange, Q&amp;A for active researchers, academics and students of physics" title="profile for Michael Brown at Physics Stack Exchange, Q&amp;A for active researchers, academics and students of physics" /></a></span>
+    You can find me on <a href="http://www.researchgate.net/profile/Michael_Brown31/">Researchgate</a>,
+    <a href="https://github.com/gazebodude">GitHub</a> or <a href="http://physics.stackexchange.com/users/17320/michael-brown">Physics Stackexchange</a>.<br/>
+    <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a>.<br/>
+    Pages marked up using <a href="http://jekyllrb.com/">Jekyll</a>, <a href="http://sass-lang.com/">Sass</a>, <a href="http://compass-style.org/">Compass</a> and <a href="http://coffeescript.org/">Coffeescript</a> by a rank amateur (as you can tell).</small>
+  </footer>
+</div>
 </body>
 </html>

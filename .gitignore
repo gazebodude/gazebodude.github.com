@@ -1,1 +1,5 @@
 _site/
+.sass-cache/
+stylesheets/.sass-cache/
+stylesheets/*.css
+*.swp
