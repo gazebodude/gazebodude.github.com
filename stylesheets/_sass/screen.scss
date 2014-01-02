@@ -67,6 +67,10 @@ body.two-col {
   }
   blockquote {
     color: $blockquote-color;
+    background: $block-background-color;
+    border-radius: $block-corner-radius;
+    box-shadow: 4px 4px 5px $block-shadow-color inset, -2px -2px 5px $block-shadow-color inset;
+    padding: 1em;
   }
 
   a {
@@ -90,6 +94,9 @@ body.two-col {
     text-align: right;
     font-size: 1.75em;
     font-style: italic;
+  }
+  .header-link {
+    @include link-colors($header-color,$header-color,$header-color,$header-color,$header-color);
   }
 }
 
@@ -127,3 +134,8 @@ $SE-flair-width: 209px;
     width: 100%;
   }
 }
+
+// Syntax highlighting stylesheet
+// Copied from https://github.com/mojombo/tpw/blob/master/css/syntax.css
+@import "partials/syntax";
+

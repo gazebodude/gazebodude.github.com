@@ -19,7 +19,11 @@ $screen-content-width-columns: $blueprint-grid-columns - $screen-navbar-width-co
 $header-color: #ffbf08;
 $text-color: rgb(226, 226, 226);
 $background-color: #005757;
-$blockquote-color: #ff9aee;
+$blockquote-color: #66ff66;
+
+$block-background-color: #303030;
+$block-shadow-color: #202020;
+$block-corner-radius: 1em;
 
 @import "compass/typography/links/link-colors";
 $link-color: #00ffff;
