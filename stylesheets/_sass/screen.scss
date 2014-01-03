@@ -118,7 +118,7 @@ body.two-col {
   //border-bottom: 1px black solid;
 }
 
-// Styles for stackexchange flair
+// Styles for footer
 $SE-flair-width: 209px;
 #footer #SE-flair {
   display: block;
@@ -126,12 +126,36 @@ $SE-flair-width: 209px;
   float: left;
 }
 
+#footer {
+  div.CC-license {
+    display: inline-block;
+    width: 100%;
+    img {
+      float: left;
+    }
+  }
+  div.flair {
+    display: inline-block;
+    width: 100%;
+  }
+}
 // Generic element styles
 
 // Content specific styles
 #content {
   img {
     width: 100%;
+  }
+  img.gallery-thumbnail {
+    width: 100px;
+    float: left;
+  }
+  div.gallery-thumbnail-container {
+    width: 100px;
+    height: 150px;
+    float: left;
+    color: #ffffff;
+    margin: 3px;
   }
 }
 

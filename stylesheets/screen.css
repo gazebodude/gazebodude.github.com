@@ -650,9 +650,37 @@ body.two-col a:active {
   float: left;
 }
 
+/* line 130, _sass/screen.scss */
+#footer div.CC-license {
+  display: inline-block;
+  width: 100%;
+}
 /* line 133, _sass/screen.scss */
+#footer div.CC-license img {
+  float: left;
+}
+/* line 137, _sass/screen.scss */
+#footer div.flair {
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 146, _sass/screen.scss */
 #content img {
   width: 100%;
+}
+/* line 149, _sass/screen.scss */
+#content img.gallery-thumbnail {
+  width: 100px;
+  float: left;
+}
+/* line 153, _sass/screen.scss */
+#content div.gallery-thumbnail-container {
+  width: 100px;
+  height: 150px;
+  float: left;
+  color: #ffffff;
+  margin: 3px;
 }
 
 /* line 1, _sass/partials/_syntax.scss */
