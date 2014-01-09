@@ -163,3 +163,12 @@ $SE-flair-width: 209px;
 // Copied from https://github.com/mojombo/tpw/blob/master/css/syntax.css
 @import "partials/syntax";
 
+// Reset styles for gists
+div.gist {
+  pre.lines {
+    display: none;
+  }
+  table.highlight {
+    background-color: inherit;
+  }
+}
