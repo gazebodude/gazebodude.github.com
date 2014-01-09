@@ -26,11 +26,4 @@ We spent a long weekend mini-holiday in Brisbane recently. Here are some photos 
 
 Most of the trip we spent indoors due to a poorly timed heat wave... which was fine, but it meant for fewer photos than I had expected. I did however find [this](http://www.amazon.com/Canon-EOS-Digital-Field-Guide/dp/1118169123) which is obviously perfect! I've just started and it already has given some good practical shooting advice... not, alas, in time for this shoot.
 
-{% for img in page.image-urls %}
-<div class="gallery-thumbnail-container">
-  <a href="{{ page.dropbox-folder-url }}/{{ img[1].url }}/{{ page.gallery-word }}_{{ img[0] }}.JPG" data-lightbox="{{ page.gallery-word }}" title="{{ img[1].desc }}">
-    <img src="{{ page.thumbnail-folder-url }}/{{ page.gallery-word }}_thumb_{{ img[0] }}.JPG" class="gallery-thumbnail" alt="{{ page.gallery-word }}_{{ img[0] }}" />
-  </a>
-</div>
-{% endfor %}
-
+{% include gallery.html %}

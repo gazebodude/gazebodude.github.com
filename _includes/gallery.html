@@ -1,0 +1,29 @@
+{% comment %}
+
+Lightbox gallery template. Gallery folder and YAML frontmatter setup are required to use. For example: if the full size images are hosted in a dropbox share
+
+https://dl.dropboxusercontent.com/sh/randommadeupthing
+
+with mangled file names (i.e. actual file paths are https://dl.<as above>/firstmangledfilename/gallery_name_01.JPG, and thumbnails are named /thumbnail_folder/gallery_name_thumb_01.JPG etc., then set up the following YAML:
+
+---
+... the usual post and layout related entries ...
+gallery-world: gallery_name
+dropbox-folder-url: https://dl.dropboxusercontent.com/sh/randommadeupthing
+thumbnail-folder-url: /thumbnail_folder
+image-urls:
+  "01": {url: firstmangledfilename, desc: "A pretty picture"}
+  "02": {url: secondmangledfilename, desc: "Also pretty this one"}
+... etc. ...
+---
+
+Note that the file names must be fairly uniform, except for the mangled parts, for this to work as expected.
+{% endcomment %}
+{% for img in page.image-urls %}
+<div class="gallery-thumbnail-container">
+  <a href="{{ page.dropbox-folder-url }}/{{ img[1].url }}/{{ page.gallery-word }}_{{ img[0] }}.JPG" data-lightbox="{{ page.gallery-word }}" title="{{ img[1].desc }}">
+    <img src="{{ page.thumbnail-folder-url }}/{{ page.gallery-word }}_thumb_{{ img[0] }}.JPG" class="gallery-thumbnail" alt="{{ page.gallery-word }}_{{ img[0] }}" />
+  </a>
+</div>
+{% endfor %}
+
