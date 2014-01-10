@@ -682,6 +682,10 @@ body.two-col a:active {
   color: #ffffff;
   margin: 3px;
 }
+/* line 160, _sass/screen.scss */
+#content .comments-link {
+  font-size: 0.75em;
+}
 
 /* line 1, _sass/partials/_syntax.scss */
 body.bp div.highlight {
@@ -1010,11 +1014,11 @@ body.bp div.highlight .il {
   color: #009999;
 }
 
-/* line 168, _sass/screen.scss */
+/* line 171, _sass/screen.scss */
 div.gist pre.lines {
   display: none;
 }
-/* line 171, _sass/screen.scss */
+/* line 174, _sass/screen.scss */
 div.gist table.highlight {
   background-color: inherit;
 }
