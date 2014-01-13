@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'Exploring Flatland: Part I'
+date: 2014-01-13 22:04:00
 ---
 
 ##  Intro
@@ -46,4 +47,38 @@ definitely not life as we know it.
 
 Not much happens to ordinary mechanics when you get rid of a dimension. The same
 conservation laws still work. The main difference is that angular momentum is a
-scalar.
+scalar. The cross product of two vectors \\(\vec{u}=(u_x,u_y,u_z)\\) and
+\\(\vec{v}=(v_x,v_y,v_z)\\):
+
+$$ \vec{u}\times\vec{v} = (u_y v_z - u_z v_y, u_z v_x - u_x v_z, u_x v_y - u_y
+v_x). $$
+
+Clearly the only component that makes any sense in two dimension is the last
+one: \\( u_x v_y - u_y v_x \\). The fact that this transforms as a scalar under
+rotations in the plane follows from the fact that \\(\vec{u}\times\vec{v}\\)
+transforms like a vector under three dimensional rotations.
+
+The physical reason behind this mathematical fact is that cross products always
+have to do with rotations, and rotations are really described by a plane rather
+than an axis. It just so happens that in three dimensions every plane has a
+unique (up to sign) vector pointing perpendicular to it, so you can get away with
+talking about vector cross products. This concept doesn't generalise to different
+dimensionality. Rotations, curls etc. are better understood in terms of a rank-2
+antisymmetric tensor. Only in three dimensions does the number of components of
+one of these, \\( \frac{D(D-1)}{2} \\), equal the number of dimensions of a vector
+\\( D \\), and an invariant tensor \\( \epsilon_{ijk} \\) exists which lets you
+identify an antisymmetric tensor with a vector:
+
+$$ \left(\vec{u}\times\vec{v}\right)_i = \sum_{jk} \epsilon_{ijk} u_j v_k. $$
+
+If you keep this one thing in mind then all of the other stuff in mechanics
+(Newton's laws, conservation of energy, momentum, angular momentum, torques,
+rigid body mechanics etc. etc.) all follows through without any real surprises.
+The interesting stuff come when we get to quantum mechanics and field theory.
+
+In the next installment we'll assume for the moment that gravity still exists
+and falls off as \\( 1/r \\) and have a go at the Kepler problem to see what
+orbits are like. When we get to general relativity we'll see that, in fact,
+there is no gravitational force in flatland, but the force law we derive will
+still be valid for a force mediated by a massless scalar field, or in the
+non-relativistic limit of electromagnetism.
