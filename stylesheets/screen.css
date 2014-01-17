@@ -1022,3 +1022,21 @@ div.gist pre.lines {
 div.gist table.highlight {
   background-color: inherit;
 }
+
+/* line 180, _sass/screen.scss */
+.post-list li {
+  margin-bottom: 1em;
+}
+/* line 183, _sass/screen.scss */
+.post-list p.post_meta, .post-list .post_excerpt > p {
+  margin-bottom: 0px;
+}
+/* line 186, _sass/screen.scss */
+.post-list .post_meta {
+  font-size: 0.75em;
+}
+/* line 189, _sass/screen.scss */
+.post-list .post_excerpt {
+  font-size: 0.75em;
+  margin: 0.5em;
+}

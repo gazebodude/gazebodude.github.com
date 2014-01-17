@@ -9,9 +9,15 @@ title: (Mis)anthropic selection
 <section>
   <ul class="post-list">
     {% for post in site.posts %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a>
-          <span>{{ post.date | date_to_string }}</span>
+      <li><span class="post_title"><a href="{{ post.url }}">{{ post.title }}</a></span>
+          <p class="post_meta">
+          <span class="post_date">{{ post.date | date_to_string }}</span>
           (<a href="{{ post.url }}#disqus_thread" class="comments-link">Comments</a>)
+          </p>
+          {% if post.excerpt!='' %}
+          <div class="post_excerpt">{{ post.excerpt || markdownify }}</div>
+          {% endif %}
+          <a href="{{ post.url }}" class="post_meta">Click to read the full post.</a>
       </li>
     {% endfor %}
   </ul>

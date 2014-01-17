@@ -175,3 +175,19 @@ div.gist {
     background-color: inherit;
   }
 }
+
+.post-list {
+  li {
+    margin-bottom: 1em;
+  }
+  p.post_meta, .post_excerpt>p {
+   margin-bottom: 0px;
+  }
+  .post_meta {
+    font-size: 0.75em;
+  }
+  .post_excerpt {
+    font-size: 0.75em;
+    margin: 0.5em;
+  }
+}

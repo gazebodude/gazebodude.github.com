@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting Up MathJax
+excerpt: ''
 ---
 
 This should now render as math:

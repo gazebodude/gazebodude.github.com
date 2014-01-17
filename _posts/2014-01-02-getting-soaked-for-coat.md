@@ -2,6 +2,9 @@
 layout: post
 title: Getting Soaked for COAT
 date: 2014-01-02 23:13:00
+excerpt: So a thing going around on Facebook lately is a photo jam (or whatever
+  you call these things) with the theme of getting soaked to raise awareness for
+  [Chinese Orphans Assistance Team (COAT)](http://www.eagleswingschina.org/index.php) 
 ---
 
 *UPDATE 9 Jan: [Here is the Facebook event.](https://www.facebook.com/events/701625799856646)*

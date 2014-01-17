@@ -1,6 +1,9 @@
 ---
 layout: post
 title: 'Quote: Elizabeth Stoker on Freedom and Responsibility'
+excerpt: 
+  _Did Jesus require a good or service from anyone to prevent them from
+  starving? He didn't. Did he request payment for his miracles? Never...._
 ---
 
 > Did Jesus require a good or service from anyone to prevent them from starving? He didn't. Did he request payment for his miracles? Never. He never told us not to expect to be paid for work, and of course we should be: but we should also recognize that work itself, that the economy and the state themselves, are to be placed in service of the responsibility we have to one another. If we can use any of those things, therefore, to meet our responsibilities, then we should do so.

@@ -2,6 +2,7 @@
 layout: post
 title: Getting there
 date: 2013-04-04 12:19:00
+excerpt: ''
 ---
 
 Well this site is gradually getting there. Things coming soon:

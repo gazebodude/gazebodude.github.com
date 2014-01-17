@@ -2,6 +2,7 @@
 layout: post
 title: Testing Syntax Highlighting
 date: 2014-01-02 13:00:00
+excerpt: ''
 ---
 
 This should be in a nice code block:
