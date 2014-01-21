@@ -39,7 +39,7 @@ the equation linear and hence solvable, but they are justifiable because *small
 perturbations* to any system are generically linear. We imagine that the true
 theory of the world could be something very complicated, but we are only trying
 to understand small disturbances to one part of it so we can work instead with a
-dramatically simplified verysion of things. The beauty of physics is you can
+dramatically simplified version of things. The beauty of physics is you can
 often make progress this way, unlike in, say, economics.
 
 I didn't explain what \\(\mu\\) is. It is a physical constant of the scalar field
@@ -108,7 +108,8 @@ of the total internal force on the system is zero (that's the action-reaction
 thing: one of Newton's laws, but I can never remember which one) and we don't have
 any externally applied forces. For the relative motion you just have a central
 force problem where instead of the actual mass of either particle you use the
-reduced mass \\( \mu = \frac{m_1 m_2}{m_1 + m_2} \\). As usual this trick accounts
+reduced mass \\( \mu = \frac{m_1 m_2}{m_1 + m_2} \\). Don't confuse this with
+the constant in the Klein-Gordon equation from before! As usual this trick accounts
 for the fact that the bodies in fact revolve around their common centre of mass
 instead of around each other.
 
