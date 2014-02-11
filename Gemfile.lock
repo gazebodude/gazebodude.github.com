@@ -15,6 +15,7 @@ GEM
       fssm (>= 0.2.7)
       sass (~> 3.1)
     fast-stemmer (1.0.2)
+    ffi (1.9.3)
     ffi (1.9.3-x64-mingw32)
     ffi (1.9.3-x86-mingw32)
     fssm (0.2.10)
@@ -45,6 +46,7 @@ GEM
       rb-inotify (>= 0.9)
       rb-kqueue (>= 0.2)
     maruku (0.7.0)
+    mr_poole (0.5.1)
     parslet (1.5.0)
       blankslate (~> 2.0)
     posix-spawn (0.3.8)
@@ -73,5 +75,6 @@ PLATFORMS
 DEPENDENCIES
   compass
   github-pages (= 13)
+  mr_poole
   rake
   sass

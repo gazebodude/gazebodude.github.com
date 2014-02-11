@@ -30,35 +30,3 @@ task :buildsite => :styles do
   sh "jekyll build"
 end
 
-desc "Create a draft"
-task :createdraft, [:title] do | t, args |
-  file_prefix = '_drafts'
-  if /[[:word:]]/ =~ args.title
-    puts "Attempting to create draft titled `#{args.title}`."
-
-    file_name = args.title
-    file_name = File.join(file_prefix,
-                  file_name.gsub(/[^[:word:]]/, '_').downcase + ".md")
-    puts "The file name is `#{file_name}`."
-
-    if File.exists?(file_name)
-      puts "#{file_name} already exists! Aborting."
-      exit(-1)
-    end
-
-    front_matter = { 'layout' => 'post',
-                     'title'  => args.title,
-                   }
-    front_matter_str = front_matter.to_yaml + "---\n"
-
-    File.open(file_name, 'w') do |file|
-      file.write front_matter_str
-    end
-  else
-    puts "Call with a string argument as the post title, i.e."
-    puts
-    puts "$ rake createdraft['my post title']"
-    puts
-    puts "The title must have at least one word character in it."
-  end
-end

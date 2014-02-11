@@ -9,6 +9,8 @@ gem 'github-pages','=13'
 #gem 'rdiscount',  '=1.6.8'
 #gem 'RedCloth',   '=4.2.9'
 
+gem 'mr_poole' # draft and post workflow manager for jekyll
+
 gem 'rake'
 gem 'sass'
 gem 'compass'
