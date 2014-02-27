@@ -194,7 +194,7 @@ regular cycles appear on the sky that led to an understanding of time keeping an
 our place in the universe. Only by observing astronomical regularities were the
 foundations laid for the revolution brought on by the likes of Kepler, Galileo and
 Newton. It is hard to imagine how Flatlander society would develop. Navigating by
-the stars is certainly a non-starter.  Would they ever rise about the brute fear
+the stars is certainly a non-starter.  Would they ever rise above the brute fear
 of wild and capricious elements to discover the hidden patterns underlying their
 world? 
 

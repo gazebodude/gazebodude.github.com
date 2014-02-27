@@ -5,3 +5,4 @@ lsi: false
 pygments: true
 #source: /
 markdown: kramdown
+encoding: utf-8

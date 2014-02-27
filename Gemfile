@@ -10,6 +10,7 @@ gem 'github-pages','=13'
 #gem 'RedCloth',   '=4.2.9'
 
 gem 'mr_poole' # draft and post workflow manager for jekyll
+gem 'wdm' # for jekyll --watch during dev
 
 gem 'rake'
 gem 'sass'
