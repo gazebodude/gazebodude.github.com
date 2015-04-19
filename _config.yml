@@ -2,7 +2,7 @@
 # These are just here to match their configuration
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
 #source: /
 markdown: kramdown
 encoding: utf-8

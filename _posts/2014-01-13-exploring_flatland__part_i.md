@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Exploring Flatland: Part I'
-date: 2014-01-13 22:04:00
+#date: 2014-01-13 22:04:00
 excerpt: "If you haven't read Edwin Abbott's *[Flatland: A Romance of Many
   Dimensions](https://en.wikipedia.org/wiki/Flatland)* go and read it now. It is
   now in the public domain so it's free online, and your geek cred will go up by
