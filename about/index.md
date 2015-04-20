@@ -10,7 +10,7 @@ title: About Me
 My name is Michael Brown. I'm a 30ish doctoral candidate in theoretical physics, a husband of eight years and counting, a father to two [budgerigars](https://en.wikipedia.org/wiki/Budgerigar) (although the paternity test seemed dodgy to me) and an **amateur** writer, photographer, theologian, musician (lapsed), gamer, programmer and liberal Jesus-motivated social justice slackivist. I'm based in north Queensland, Australia, though I'm originally from the United States of America.
 
 ## Physics
-In terms of physics work I consider myself a quantum field theorist. I have a BSc. (Hons) in Physics and am currently studying for a Ph.D. I also have a [ResearchGate profile](http://www.researchgate.net/profile/Michael_Brown31/) and a not-so-active [Physics Stackexchange account](http://physics.stackexchange.com/users/17320/michael-brown).
+In terms of physics work I consider myself a quantum field theorist. I have a BSc. (Hons) in Physics and am currently studying for a Ph.D. You can find my papers on [the physics arXiv](http://arxiv.org/a/brown_m_3.html). I also have a [ResearchGate profile](http://www.researchgate.net/profile/Michael_Brown31/) and a not-so-active [Physics Stackexchange account](http://physics.stackexchange.com/users/17320/michael-brown).
 
 Quantum field theory is an enormous field, full of amazing discoveries and, despite being a century old, having many active research frontiers. The main areas where it is applied are high energy particle physics, cosmology and many body theory in condensed matter systems. 
 
