@@ -1,8 +1,12 @@
 # Github config overrides (c.f. https://help.github.com/articles/using-jekyll-with-pages)
 # These are just here to match their configuration
-safe: true
+safe: false
 lsi: false
 highlighter: pygments
 #source: /
 markdown: kramdown
 encoding: utf-8
+gems:
+    - jemoji
+    - jekyll-sitemap
+    - jekyll-redirect-from

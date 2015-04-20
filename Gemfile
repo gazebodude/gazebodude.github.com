@@ -9,11 +9,14 @@ gem 'github-pages'
 #gem 'rdiscount',  '=1.6.8'
 #gem 'RedCloth',   '=4.2.9'
 
-#gem 'mr_poole' # draft and post workflow manager for jekyll
+gem 'mr_poole' # draft and post workflow manager for jekyll
 #gem 'wdm' # for jekyll --watch during dev
 
 gem 'rake'
 #gem 'sass'
 gem 'compass'
 gem 'compass-blueprint'
-# note that coffee script is managed by the node.js package manager npm
+
+gem 'jemoji'
+gem 'jekyll-sitemap'
+gem 'jekyll-redirect-from'
