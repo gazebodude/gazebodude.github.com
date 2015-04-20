@@ -668,6 +668,10 @@ body.two-col a:active {
   float: left;
 }
 /* line 153, _sass/screen.scss */
+#content img.emoji {
+  width: 20px;
+}
+/* line 156, _sass/screen.scss */
 #content div.gallery-thumbnail-container {
   width: 100px;
   height: 150px;
@@ -675,7 +679,7 @@ body.two-col a:active {
   color: #ffffff;
   margin: 3px;
 }
-/* line 160, _sass/screen.scss */
+/* line 163, _sass/screen.scss */
 #content .comments-link {
   font-size: 0.75em;
 }
@@ -1007,28 +1011,28 @@ body.bp div.highlight .il {
   color: #009999;
 }
 
-/* line 171, _sass/screen.scss */
+/* line 174, _sass/screen.scss */
 div.gist pre.lines {
   display: none;
 }
-/* line 174, _sass/screen.scss */
+/* line 177, _sass/screen.scss */
 div.gist table.highlight {
   background-color: inherit;
 }
 
-/* line 180, _sass/screen.scss */
+/* line 183, _sass/screen.scss */
 .post-list li {
   margin-bottom: 1em;
 }
-/* line 183, _sass/screen.scss */
+/* line 186, _sass/screen.scss */
 .post-list p.post_meta, .post-list .post_excerpt > p {
   margin-bottom: 0px;
 }
-/* line 186, _sass/screen.scss */
+/* line 189, _sass/screen.scss */
 .post-list .post_meta {
   font-size: 0.75em;
 }
-/* line 189, _sass/screen.scss */
+/* line 192, _sass/screen.scss */
 .post-list .post_excerpt {
   font-size: 0.75em;
   margin: 0.5em;
