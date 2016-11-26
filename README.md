@@ -1,7 +1,7 @@
 gazebodude.github.com
 =====================
 
-This is the source repository for [gazebodude.github.com](http://gazebodude.github.io), the personal website and blog of Michael Brown.
+This is the source repository for [mikejbrown.github.com](https://mikejbrown.github.io/), the personal website and blog of Michael Brown.
 
 Hosted by Github pages using Jekyll, Sass and Coffeescript.
 

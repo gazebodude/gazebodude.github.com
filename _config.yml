@@ -1,12 +1,19 @@
-# Github config overrides (c.f. https://help.github.com/articles/using-jekyll-with-pages)
-# These are just here to match their configuration
-safe: false
-lsi: false
-highlighter: pygments
-#source: /
-markdown: kramdown
-encoding: utf-8
+## The following defaults are set by GitHub, which you are free to override in your _config.yml file:
+#github: [metadata]
+kramdown:
+  input: GFM
+  hard_wrap: false
 gems:
-    - jemoji
-    - jekyll-sitemap
-    - jekyll-redirect-from
+  - jekyll-coffeescript
+  - jekyll-paginate
+
+## Github config overrides (c.f. https://help.github.com/articles/configuring-jekyll/)
+# These are just here to match their configuration
+lsi: false
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
