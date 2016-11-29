@@ -31,7 +31,7 @@ body.bp {
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
   @include prepend(1);
-  
+
   // Grid background for debugging
   @if $site-debug == true { @include showgrid(); }
   background: $background-color repeat;
@@ -81,7 +81,7 @@ body.two-col {
 #header {
   // site banner styles
   img {
-  
+
   }
   h1 {
     color: $header-color;
@@ -89,7 +89,7 @@ body.two-col {
     font-size: 8em;
     margin-bottom: 0;
   }
-  h2 { 
+  h2 {
     color: $text-color;
     text-align: right;
     font-size: 1.75em;
@@ -97,6 +97,25 @@ body.two-col {
   }
   .header-link {
     @include link-colors($header-color,$header-color,$header-color,$header-color,$header-color);
+  }
+  h3 {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      margin-top: .25em;
+      padding: 0;
+      text-align: center;
+      li {
+        list-style: "|";
+        display: inline;
+        border-right: 1px solid #bbb;
+        padding-right: 1.5em;
+        padding-left: 1.25em;
+      }
+      li:last-child {
+        border-right: none;
+      }
+    }
   }
 }
 
